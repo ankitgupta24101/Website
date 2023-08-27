@@ -1,4 +1,4 @@
-# Website
+# Website :- Follow below steps to run this project
 git --version \
 choco install gh \
 refreshenv :- for refreshing the environment variable \
@@ -11,6 +11,7 @@ C:\Users\ankit\anaconda3 :- add the path to python.exe in your PATH environment 
 python --version \
 C:\Users\ankit\anaconda3\Scripts  :- add the path to pip.exe in your PATH environment variable \
 pip --version \
+# Git Command
 git init \
 git status \
 git add filename \
@@ -18,12 +19,13 @@ git config --global user.email "email_id" \
 git config --global push.autoSetupRemote true
 git commit -m "First Commit" \
 git push -u origin \
+git fetch \
+git stash \
+git switch main \
+
 pip install Django==4.2.4 \
 python -m django --version \
 django-admin startproject MyWebsite \
 cd MyWebsite \
 python manage.py startapp first_app \
 python manage.py runserver \
-git fetch \
-git stash \
-git switch main \

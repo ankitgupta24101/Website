@@ -17,3 +17,5 @@ git add filename \
 git config --global user.email "email_id" \
 git commit -m "First Commit" \
 git push -u origin \
+pip install Django==4.2.4 \
+python -m django --version

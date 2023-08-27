@@ -21,11 +21,13 @@ git config --global user.email "email_id" \
 git config --global push.autoSetupRemote true
 git commit -m "First Commit" \
 git push -u origin \
+git pull origin \
 git fetch \
 git stash \
 git switch main \
 
 # Python Command
+pip install -r requirements.txt \
 pip install Django==4.2.4 \
 python -m django --version \
 django-admin startproject MyWebsite \

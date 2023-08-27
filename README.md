@@ -32,3 +32,7 @@ django-admin startproject MyWebsite \
 cd MyWebsite \
 python manage.py startapp first_app \
 python manage.py runserver \
+python manage.py migrate \
+python manage.py sqlmigrate first_app 0001 \
+python manage.py makemigrations first_app \
+python manage.py createsuperuser \

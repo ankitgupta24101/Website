@@ -23,7 +23,7 @@ python -m django --version \
 django-admin startproject MyWebsite \
 cd MyWebsite \
 python manage.py startapp first_app \
-python manage.py runserver
-git fetch
-git stash
-git switch main
+python manage.py runserver \
+git fetch \
+git stash \
+git switch main \

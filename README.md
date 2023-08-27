@@ -18,7 +18,7 @@ git init \
 git status \
 git add filename \
 git config --global user.email "email_id" \
-git config --global push.autoSetupRemote true
+git config --global push.autoSetupRemote true \
 git commit -m "First Commit" \
 git push -u origin \
 git pull origin \
@@ -28,7 +28,7 @@ git switch main \
 
 # Python Command
 pip install -r requirements.txt \
-For installing all python modules, run setup.py file
+For installing all python modules, run setup.py file \
 pip install Django==4.2.4 \
 python -m django --version \
 django-admin startproject MyWebsite \

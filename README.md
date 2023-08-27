@@ -28,6 +28,7 @@ git switch main \
 
 # Python Command
 pip install -r requirements.txt \
+For installing all python modules, run setup.py file
 pip install Django==4.2.4 \
 python -m django --version \
 django-admin startproject MyWebsite \

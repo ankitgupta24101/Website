@@ -1,6 +1,6 @@
 # Website
-git --version
-choco install gh
+git --version\
+choco install gh\
 refreshenv :- for refreshing the environment variable
 gh auth login
 git clone https://github.com/ankitgupta24101/Website.git
@@ -13,3 +13,7 @@ C:\Users\ankit\anaconda3\Scripts  :- add the path to pip.exe in your PATH enviro
 pip --version
 git init
 git status
+git add filename
+git config --global user.email "email_id"
+git commit -m "First Commit"
+git push -u origin

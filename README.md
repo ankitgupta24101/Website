@@ -15,5 +15,15 @@ git init \
 git status \
 git add filename \
 git config --global user.email "email_id" \
+git config --global push.autoSetupRemote true
 git commit -m "First Commit" \
 git push -u origin \
+pip install Django==4.2.4 \
+python -m django --version \
+django-admin startproject MyWebsite \
+cd MyWebsite \
+python manage.py startapp first_app \
+python manage.py runserver
+git fetch
+git stash
+git switch main

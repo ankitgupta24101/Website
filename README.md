@@ -1,17 +1,19 @@
 # Website :- Follow below steps to run this project
+# Git and Python Install
 git --version \
 choco install gh \
 refreshenv :- for refreshing the environment variable \
-gh auth login \
-git clone https://github.com/ankitgupta24101/Website.git \
 C:\Program Files\Git\bin :- add the path to git.exe in your PATH environment variable \
-git remote -v \
 where anaconda \
 C:\Users\ankit\anaconda3 :- add the path to python.exe in your PATH environment variable  \
 python --version \
 C:\Users\ankit\anaconda3\Scripts  :- add the path to pip.exe in your PATH environment variable \
 pip --version \
+
 # Git Command
+gh auth login \
+git clone https://github.com/ankitgupta24101/Website.git \
+git remote -v \
 git init \
 git status \
 git add filename \
@@ -23,6 +25,7 @@ git fetch \
 git stash \
 git switch main \
 
+# Python Command
 pip install Django==4.2.4 \
 python -m django --version \
 django-admin startproject MyWebsite \

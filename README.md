@@ -8,7 +8,7 @@ where anaconda \
 C:\Users\ankit\anaconda3 :- add the path to python.exe in your PATH environment variable  \
 python --version \
 C:\Users\ankit\anaconda3\Scripts  :- add the path to pip.exe in your PATH environment variable \
-pip --version \
+pip --version
 
 # Git Command
 gh auth login \
@@ -26,7 +26,7 @@ git pull origin \
 git fetch \
 git stash \
 git stash pop \
-git switch main \
+git switch main
 
 # Python Command
 pip install -r requirements.txt \
@@ -40,4 +40,4 @@ python manage.py runserver \
 python manage.py migrate \
 python manage.py sqlmigrate first_app 0001 \
 python manage.py makemigrations first_app \
-python manage.py createsuperuser \
+python manage.py createsuperuser

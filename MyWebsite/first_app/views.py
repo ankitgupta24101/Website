@@ -10,7 +10,7 @@ def members(request):
 
 def home(request):
     mymembers = Home.objects.all().values()
-    template = loader.get_template('myfirst.html')
+    template = loader.get_template('home.html')
     context = {
         'mymembers': mymembers,
     }

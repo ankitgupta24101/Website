@@ -17,6 +17,7 @@ git remote -v \
 git init \
 git status \
 git add filename \
+git reset filename \
 git config --global user.email "email_id" \
 git config --global push.autoSetupRemote true \
 git commit -m "First Commit" \
@@ -24,6 +25,7 @@ git push -u origin \
 git pull origin \
 git fetch \
 git stash \
+git stash pop \
 git switch main \
 
 # Python Command

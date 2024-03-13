@@ -25,14 +25,14 @@ SECRET_KEY = django_secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Local Host
-# DEBUG = True
-#
-# ALLOWED_HOSTS = []
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 # Production
-DEBUG = False
-
-ALLOWED_HOSTS = ['*']
+# DEBUG = False
+#
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition

@@ -29,6 +29,8 @@ git stash pop \
 git switch main
 
 # Python Command
+Run in Pycharm terminal for checking path of Python environment in Terminal \
+python - c "import sys; print(sys.executable)" \
 pip install -r requirements.txt \
 For installing all python modules, run setup.py file \
 pip install Django==4.2.4 \

@@ -1,7 +1,10 @@
-Django==4.2.4
+Django
 pyttsx3
 psutil
 pyautogui
 win10toast
 pywin32
 python-dotenv
+pytesseract
+pillow
+pyperclip

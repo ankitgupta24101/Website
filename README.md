@@ -42,4 +42,12 @@ python manage.py runserver \
 python manage.py migrate \
 python manage.py sqlmigrate first_app 0001 \
 python manage.py makemigrations first_app \
-python manage.py createsuperuser
+python manage.py createsuperuser \
+
+# Conda Command
+conda info --envs \
+conda activate aiassistant \
+https://github.com/UB-Mannheim/tesseract/wiki?utm_source=chatgpt.com
+setx PATH "%PATH%;C:\Program Files\Tesseract-OCR" \
+tesseract --version \
+pip install pytesseract pyperclip pyttsx3 pyautogui vosk sounddevice

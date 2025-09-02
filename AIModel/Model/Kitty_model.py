@@ -7,9 +7,10 @@ import queue
 import shutil
 import urllib.request
 import zipfile
-
 import pyautogui
 import pyttsx3
+import pyperclip
+from PIL import Image
 
 # Optional voice recognition
 try:
@@ -19,6 +20,12 @@ try:
 except ImportError:
     VOICE_AVAILABLE = False
 
+# Optional OCR
+try:
+    import pytesseract
+    OCR_AVAILABLE = True
+except ImportError:
+    OCR_AVAILABLE = False
 
 class Assistant:
     def __init__(self, vosk_model_dir="vosk-model-small-en-us-0.15"):
@@ -43,6 +50,7 @@ class Assistant:
             "video editor": self.open_video_editor,
             "calculator": self.open_calculator,
             "paint": self.open_paint,
+            "image to text": self.image_to_text_clipboard,
             "quit": self.exit_assistant,
             "exit": self.exit_assistant,
         }
@@ -78,6 +86,33 @@ class Assistant:
     def say_hello(self):
         self.speak("Hello! How are you today?")
 
+        # ===================== OCR =====================
+    def image_to_text_clipboard(self, image_path=None):
+        """Convert an image into text and copy to clipboard."""
+        if not OCR_AVAILABLE:
+            self.speak("OCR is not available. Please install pytesseract and pillow.")
+            print("[ERROR] pytesseract or pillow not installed.")
+            return
+
+        try:
+            if image_path is None:
+                # image_path = input("Enter image file path: ").strip()
+                # image_path = "/ai/Image/capture.jpeg"
+                base_dir = os.path.dirname(os.path.abspath(__file__))
+                image_path = r"D:\Code\Website\HtmlWebsite\Image\Capture.jpeg"
+            if not os.path.exists(image_path):
+                self.speak("Image file not found.")
+                print("[ERROR] File not found:", image_path)
+                return
+
+            text = pytesseract.image_to_string(Image.open(image_path))
+            pyperclip.copy(text)
+            self.speak("Text extracted and copied to clipboard.")
+            print("[INFO] Extracted text:\n", text)
+
+        except Exception as e:
+            print(f"[ERROR] OCR failed: {e}")
+            self.speak("Sorry, I could not extract text from the image.")
     # ===================== Utilities =====================
     def take_screenshot(self):
         filename = f"screenshot_{int(time.time())}.png"

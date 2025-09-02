@@ -46,6 +46,7 @@ python manage.py createsuperuser \
 
 # Conda Command
 conda info --envs \
+conda create -n aiassistant python \
 conda activate aiassistant \
 https://github.com/UB-Mannheim/tesseract/wiki?utm_source=chatgpt.com
 setx PATH "%PATH%;C:\Program Files\Tesseract-OCR" \

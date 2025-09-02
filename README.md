@@ -51,4 +51,6 @@ conda activate aiassistant \
 https://github.com/UB-Mannheim/tesseract/wiki?utm_source=chatgpt.com
 setx PATH "%PATH%;C:\Program Files\Tesseract-OCR" \
 tesseract --version \
-pip install pytesseract pyperclip pyttsx3 pyautogui vosk sounddevice
+pip install pytesseract pyperclip pyttsx3 pyautogui vosk sounddevice \
+conda deactivate \
+conda env remove -n aiassistant \
